@@ -5,3 +5,4 @@ Funcionalidade: Usando mouse hover
 
   Cenario: Selecionar mouse hover
     Quando seleciono o mouse hover
+    Então visualizo o texto do mouse hover

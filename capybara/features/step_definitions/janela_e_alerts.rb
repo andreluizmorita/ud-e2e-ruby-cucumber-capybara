@@ -37,7 +37,7 @@ Quando("eu entro no alert e verifico faco a acao") do
     page.dismiss_confirm
 
     find('button[onclick="jsPrompt()"]').click
-    page.accept_prompt(with: 'bruno batista')
+    page.accept_prompt(with: 'andre morita')
 
-    expect(find('#result').text).to eq 'Você digitou: bruno batista'
+    expect(find('#result').text).to eq 'Você digitou: andre morita'
 end

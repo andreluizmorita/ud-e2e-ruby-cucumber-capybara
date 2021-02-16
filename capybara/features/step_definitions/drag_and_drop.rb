@@ -7,5 +7,4 @@ Quando("movo o dragdrop") do
   @segundo_elemento = find('#dropzone')
 
   @primeiro_elemento.drag_to(@segundo_elemento)
-  sleep(5)
 end
