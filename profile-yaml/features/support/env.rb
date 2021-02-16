@@ -5,6 +5,7 @@ require 'selenium-webdriver'
 require 'site_prism'
 require 'ostruct'
 require_relative 'page_helper.rb'
+require_relative 'helper.rb'
 
 BROWSER = ENV['BROWSER']
 AMBIENTE = ENV['AMBIENTE'] 
@@ -12,6 +13,7 @@ AMBIENTE = ENV['AMBIENTE']
 CONFIG = YAML.load_file(File.dirname(__FILE__) + "/ambientes/#{AMBIENTE}.yml") 
 
 World(Pages)
+World(Helper)
 
 Capybara.register_driver :selenium do |app|
 
