@@ -13,6 +13,8 @@ end
   
 Quando("edito um usuário.") do
   find('.btn.waves-light.blue').click
+  #find('.btn.waves-light.blue').click
+
 end
 
 Então("verifico se o usuário foi editado.") do
